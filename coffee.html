@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喝咖啡不聊是非 - 護理主管專屬紓壓午茶</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #fdfaf7;
+            color: #4a3728;
+        }
+
+        .serif {
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        .coffee-gradient {
+            background: linear-gradient(135deg, #6f4e37 0%, #3d2b1f 100%);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-pattern {
+            background-color: #fdfaf7;
+            background-image: url("https://www.transparenttextures.com/patterns/pinstriped-suit.png");
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .btn-hover:hover {
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="hero-pattern">
+
+    <!-- 標題封面區 -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden coffee-gradient text-white">
+        <div class="absolute inset-0 opacity-30">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=2070" alt="咖啡廳背景" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <span class="inline-block px-4 py-1 mb-6 border border-white/50 rounded-full text-sm tracking-widest uppercase">護理部人力資源發展委員會</span>
+            <h1 class="serif text-5xl md:text-7xl font-bold mb-6 leading-tight">喝咖啡 <span class="text-amber-200">不聊是非</span></h1>
+            <p class="text-xl md:text-2xl font-light mb-10 tracking-wide opacity-90">暫停忙碌，給身心一個深呼吸的機會</p>
+            <a href="#register" class="bg-amber-600 hover:bg-amber-700 text-white px-10 py-4 rounded-full text-lg font-bold shadow-xl btn-hover inline-block">立即預約午茶時光</a>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 floating">
+            <i class="fa-solid fa-chevron-down text-2xl opacity-50"></i>
+        </div>
+    </section>
+
+    <!-- 活動初衷區 -->
+    <section class="py-20 px-4 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="serif text-3xl font-bold text-brown-900 border-l-4 border-amber-700 pl-4">活動初衷</h2>
+                <p class="text-lg leading-relaxed text-gray-700">
+                    身為護理部的重要支柱，您辛苦了！我們誠摯邀請各位主管放下手邊的報告與臨床繁忙，
+                    在濃郁的咖啡香氣中，與夥伴們透過非正式互動，促進支持與經驗分享。
+                </p>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-mug-hot mt-1 text-amber-700"></i>
+                        <div>
+                            <h4 class="font-bold text-stone-800">專業咖啡手作體驗</h4>
+                            <p class="text-sm text-gray-600">親手沖煮一份專屬味道，感受職人精神。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-comments mt-1 text-amber-700"></i>
+                        <div>
+                            <h4 class="font-bold text-stone-800">紓壓心靈交流</h4>
+                            <p class="text-sm text-gray-600">跳脫職場壓力，最純粹的同儕對話。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-gift mt-1 text-amber-700"></i>
+                        <div>
+                            <h4 class="font-bold text-stone-800">暖心好禮相贈</h4>
+                            <p class="text-sm text-gray-600">參加即贈半磅咖啡豆或精緻掛耳包 (二選一)。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=80&w=1000" alt="手沖咖啡過程">
+            </div>
+        </div>
+    </section>
+
+    <!-- 資訊圖卡區 -->
+    <section class="bg-stone-100 py-20 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-3xl text-center shadow-sm border-t-4 border-t-amber-700">
+                <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-regular fa-calendar-check text-2xl text-amber-800"></i>
+                </div>
+                <h3 class="serif text-xl font-bold mb-4 text-amber-900">活動時間</h3>
+                <p>115 年 5 月 8 日</p>
+                <p>星期五 17:00 – 18:00</p>
+            </div>
+            <div class="glass-card p-8 rounded-3xl text-center shadow-sm border-t-4 border-t-amber-700">
+                <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-solid fa-location-dot text-2xl text-amber-800"></i>
+                </div>
+                <h3 class="serif text-xl font-bold mb-4 text-amber-900">活動地點</h3>
+                <p>教學大樓</p>
+                <p>教一會議室</p>
+            </div>
+            <div class="glass-card p-8 rounded-3xl text-center shadow-sm border-t-4 border-t-amber-700">
+                <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fa-solid fa-user-group text-2xl text-amber-800"></i>
+                </div>
+                <h3 class="serif text-xl font-bold mb-4 text-amber-900">參加對象</h3>
+                <p>本院現任</p>
+                <p>正/副護理長 (限額20人)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 報名登記區 (已移除 QR Code) -->
+    <section id="register" class="py-20 px-4 max-w-3xl mx-auto text-center">
+        <div class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border border-stone-100">
+            <h2 class="serif text-3xl font-bold mb-8 text-stone-800">報名登記</h2>
+            
+            <div class="space-y-8">
+                <!-- 規則說明 -->
+                <div class="bg-amber-50 p-6 rounded-2xl border-l-4 border-amber-600 text-left">
+                    <p class="flex items-center text-amber-900 mb-2 font-bold"><i class="fa-solid fa-circle-info mr-3"></i> 費用：全程免費</p>
+                    <ul class="text-sm text-stone-600 space-y-2 list-disc ml-5 leading-relaxed">
+                        <li>依報名順序以 20 人為限。</li>
+                        <li>報名未達 10 人則取消辦理。</li>
+                        <li class="font-bold text-amber-800 italic underline decoration-amber-300">考量活動效果與品質，如成效良好，後續將持續舉辦！</li>
+                    </ul>
+                </div>
+                
+                <!-- 報名連結按鈕 -->
+                <div class="space-y-4">
+                    <a href="https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?prevorigin=shell&origin=NeoPortalPage&subpage=design&id=gQbeJPfI6EaNpx9bOT2DTa9nSc2bj3BCkyv-1gEAcptUNkw5STVJRlExU1lIRFNCSEFaMEsxOVMwVi4u&topview=Preview" 
+                       target="_blank"
+                       class="block w-full bg-stone-800 hover:bg-black text-white py-5 rounded-2xl text-2xl font-bold transition-all shadow-lg btn-hover text-center">
+                        <i class="fa-solid fa-link mr-2"></i> 立即填寫報名表
+                    </a>
+                    <p class="text-stone-400 text-sm italic">本活動一律採取線上連結報名</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="py-12 text-center text-stone-500 border-t border-stone-200">
+        <p class="serif text-lg mb-2 text-stone-700">護理部人力資源發展委員會 敬邀</p>
+        <p class="text-xs">© 115 Nursing HR Development Committee. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // 平滑捲動動畫
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
